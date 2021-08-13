@@ -105,6 +105,7 @@ p {
   padding-top: 20px;
 }
 
+
 #navbar ul {
   list-style: none;
   float: right;
@@ -128,7 +129,7 @@ p {
 
 /* Showcase */
 #showcase {
-  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  background: url('/img/showcase.jpg') no-repeat center center/cover;
   height: 600px;
 }
 
@@ -156,7 +157,7 @@ p {
 #home-info .info-img {
   float: left;
   width: 50%;
-  background: url('../img/photo-1.jpg') no-repeat center bottom/cover;
+  background: url('/img/photo-1.jpg') no-repeat center bottom/cover;
   min-height: 100%;
 }
 
@@ -191,4 +192,43 @@ p {
   background: #444;
   color: #fff;
   padding: 20px;
+}
+
+@media screen and (max-width:470px ) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ .logo {
+   text-align: center;
+ }
+ .container ul{
+   display: flex;
+   flex-direction: column;
+ }
+ #showcase .showcase-content{
+   padding-top: 70px;
+ }
+
+}
+@media screen and (max-width: 700px) {
+ .info-img{
+   display: none;
+ }
+ #home-info .info-content {
+   width: 100%; 
+
+ }
+
+ #features {
+   display: flex;
+   flex-direction: column;
+  
+ }
+ .box {
+   width: 100%;
+ }
+ 
 }
